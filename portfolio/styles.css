@@ -1,0 +1,176 @@
+/*Color Palette
+  #D9DBF1 - light grey
+  #ACB0BD - med grey
+  #416165 - green
+  #F4ACB7 - pink
+  #0B3948 - blue
+  */
+
+/* Global Styles */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Seaweed Script', cursive;
+}
+h1{
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+a {
+  color: #F4ACB7;
+}
+
+.content-wrap{
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+
+
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  text-decoration: none;
+  background: #D9DBF1;
+  color: #0B3948;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Header & Footer */
+header, footer {
+  background-color: #0B3948;
+  color: #ACB0BD;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+}
+
+.content-info a{
+    padding: 10px;
+    display: inline-block;
+}
+
+/*header*/
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header h1, header h2 {
+  color: #D9DBF1;
+  margin: 0;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.download {
+  position: absolute; /* you must have position realtive in header (parent class) */
+  bottom:0;
+  right: 0;
+}
+/*Nav */
+nav{
+  text-align: center;
+  background: #D9DBF1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a{
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/*Main */
+main {
+  background: #D9DBF1;
+}
+/*Work Experience */
+.work{
+  background-color: #D9DBF1;
+}
+
+h3 ~ p {
+  margin: 0; /*removes for any paragraph following an H3 */
+}
+
+.job-description{
+    margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+/* Education */
+.education{
+  background-color: #D9DBF1;
+}
+
+/* Media Queries */
+@media (min-width: 900px){
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 899px){
+  header {
+    text-align: center;
+
+  }
+
+  .profile-img{
+    width: 200px;
+  }
+}
+
+
+.coding-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 0px;
+}
+
+.work {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+#projectOne, #projectTwo, #projectThree, #projectFour {
+  width:400px;
+  height: auto;
+}
